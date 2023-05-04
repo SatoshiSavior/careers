@@ -24,17 +24,16 @@ function displayJobs(jobs) {
     const jobLocation = document.createElement('p');
     jobLocation.textContent = job.location;
 
-    // Add the "Skills Required" text
-    const skillsLabel = document.createElement('h3');
-    skillsLabel.textContent = 'Skills Required:';
-    jobCard.appendChild(skillsLabel);
-
     const jobRequirements = document.createElement('ul');
     job.requirements.forEach(req => {
       const requirement = document.createElement('li');
       requirement.textContent = req;
       jobRequirements.appendChild(requirement);
     });
+
+    // Add the "Skills Required" text
+    const skillsLabel = document.createElement('h3');
+    skillsLabel.textContent = 'Skills Required:';
 
     const applyButton = document.createElement('a');
     applyButton.href = job.link;
@@ -43,6 +42,7 @@ function displayJobs(jobs) {
 
     jobCard.appendChild(jobTitle);
     jobCard.appendChild(jobLocation);
+    jobCard.appendChild(skillsLabel); // Moved this line up, right before appending jobRequirements
     jobCard.appendChild(jobRequirements);
     jobCard.appendChild(applyButton);
 
