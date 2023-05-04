@@ -1,15 +1,14 @@
 [
-    {
-      "title": "Affiliate Marketer",
-      "location": "Remote",
-      "requirements": ["Marketing", "Communication, "Goal Oriented", "Analytical Skills"],
-      "link": "https://example.com/job1"
-    },
-    {
-      "title": "Data Analyst",
-      "location": "San Francisco, CA",
-      "requirements": ["Python", "R", "SQL", "Tableau"],
-      "link": "https://example.com/job2"
-    }
-  ]
-  
+  {
+    "title": "Affiliate Marketer",
+    "location": "Remote",
+    "requirements": ["Marketing", "Communication", "Goal Oriented", "Analytical Skills"],
+    "link": "https://example.com/job1"
+  },
+  {
+    "title": "Data Analyst",
+    "location": "San Francisco, CA",
+    "requirements": ["Python", "R", "SQL", "Tableau"],
+    "link": "https://example.com/job2"
+  }
+]
